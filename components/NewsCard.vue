@@ -6,7 +6,7 @@
       <p class="card-text">
         {{ article.description }}
       </p>
-      <button type="button" class="btn btn-secondary">
+      <button type="button" class="btn">
         <a :href="article.url" target="_blank" rel="noopener">Go to Page</a>
       </button>
     </div>
@@ -27,4 +27,11 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.btn {
+  background-color: #e9ecef;
+}
+.card-footer {
+  color: blueviolet;
+}
+</style>

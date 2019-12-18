@@ -4,21 +4,14 @@
       <li
         v-for="(option, index) in options"
         :key="index"
-        class="d-inline-flex justify-content-center p-3 m-3 bg-secondary"
+        class="list d-inline-flex justify-content-center p-1 m-4"
         :value="option"
         :options="options"
         @click="updateValue"
       >
-        <div v-if="option === 'Whole Articles'">
-          <nuxt-link to="/"
-            ><div class="text-white">Whole Articles</div></nuxt-link
-          >
-        </div>
-        <div v-else>
+        <div class="choices">
           <nuxt-link :to="'/category/' + option">
-            <div class="text-white">
-              {{ option }}
-            </div>
+            {{ option }}
           </nuxt-link>
         </div>
       </li>
@@ -45,4 +38,13 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.list {
+  border: 1px solid#e9ecef;
+  font-size: 20px;
+  border-radius: 100px;
+}
+.choices :hover {
+  text-decoration: none;
+}
+</style>

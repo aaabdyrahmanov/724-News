@@ -37,4 +37,11 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+.row {
+  border: 1px solid#e9ecef;
+  padding-left: 120px;
+  margin-top: -3px;
+  border-radius: 0px 0px 20px 20px;
+}
+</style>

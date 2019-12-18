@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron bg-light">
       <h1 class="display-3">
         {{ article.name }}
         <nuxt-link :to="'/category/' + article.category">
-          <a href="#" class="badge badge-info">{{ article.category }}</a>
+          <a href="#" class="badge">{{ article.category }}</a>
         </nuxt-link>
       </h1>
       <hr class="my-4" />
@@ -15,11 +15,7 @@
       </p>
       <br />
       <p class="lead">
-        <a
-          class="btn btn-primary btn-lg ml"
-          :href="article.url"
-          role="button"
-          target="_blank"
+        <a class="btn btn-lg" :href="article.url" role="button" target="_blank"
           >Go to Page</a
         >
       </p>
@@ -36,4 +32,18 @@ export default {
   }
 }
 </script>
-<style></style>
+<style scoped>
+.jumbotron {
+  border: 1px solid#e9ecef;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.badge,
+.btn {
+  background-color: white;
+  border: 1px solid#e9ecef;
+  font-size: 50px;
+  border-radius: 100px;
+  color: blue;
+}
+</style>
