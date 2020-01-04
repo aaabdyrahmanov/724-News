@@ -1,5 +1,5 @@
 {
-  "name": "724-News",
+  "name": "724-news",
   "version": "1.0.0",
   "description": "Project prepared by using News Api and Rest Countries Api.",
   "author": "atamyratabdy",
@@ -34,5 +34,15 @@
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.0.1",
     "prettier": "^1.18.2"
-  }
+  },
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atamyratabdy/724-News.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atamyratabdy/724-News/issues"
+  },
+  "homepage": "https://github.com/atamyratabdy/724-News#readme"
 }
